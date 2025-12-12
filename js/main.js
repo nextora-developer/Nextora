@@ -26,13 +26,14 @@
   // Back to top button
   $(window).scroll(function () {
     if ($(this).scrollTop() > 300) {
-      $(".back-to-top").fadeIn("slow");
+      $(".back-to-top").fadeIn(100);
     } else {
-      $(".back-to-top").fadeOut("slow");
+      $(".back-to-top").fadeOut(100);
     }
   });
+
   $(".back-to-top").click(function () {
-    $("html, body").animate({ scrollTop: 0 }, 1500, "easeInOutExpo");
+    $("html, body").animate({ scrollTop: 0 }, 300);
     return false;
   });
 
